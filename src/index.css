@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@300;400;500;600;700;800;900&family=Padyakke+Expanded+One&family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** Pre Define ***/
+/*** Pre Define ***/
+/*** Pre Define ***/
+/*** Pre Define ***/
+
+:root{
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 1%, 25%);
+}
+
+li{
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-weight: 700;
+}
+
+img{
+  cursor: pointer;
+}
+
+
+
+/*** Pre Define Ends ***/
+/*** Pre Define Ends ***/
+/*** Pre Define Ends ***/
+/*** Pre Define Ends ***/
+
+body{
+  font-family: 'Epilogue', sans-serif;
+  background: var(--almost-white);
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+.nav-wrapper{
+  width: 100%;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+}
+
+.nav ul{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav ul li{
+  font-weight: 500;
+  color: var(--almost-black);
+  cursor: pointer;
+}
+
+.registration{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn{
+  border: 0;
+  background: transparent;
+}
+
+.register-btn{
+  border-color: var(--almost-black);
+}
+
+.feature, .company{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.feature-hover, .company-hover{
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.202);
+  position: absolute;
+  border-radius: 10px;
+  top: 40px;
+  left: -75px;
+  padding: 15px;
+  display: none;
+}
+
+.feature-hover{
+  min-height: 150px;
+  width: 150px;
+}
+
+.feature-hover.active, .company-hover.active{
+  display: block;
+}
+
+.feature-hover p{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 14px;
+}
+
+.company-hover{
+  left: 5px;
+  height: 120px;
+  width: 110px;
+}
+
+.company-hover p{
+  padding-bottom: 12px;
+}
+
+.arrow{
+  padding-left: 10px;
+}
+
+.feature-up, .company-up{
+  display: none;
+}
+
+.feature-up.active, .company-up.active{
+  display: block;
+}
+
+
+.feature-down, .company-down{
+  display: block;
+}
+
+.feature-down.active, .company-down.active{
+  display: none;
+}
+
+.list:hover{
+  color: black;
+}
+
+.menu-open-close{
+  display: none;
+  position: relative;
+}
+
+.menu{
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+/**** Hero Section starts ****/
+/**** Hero Section starts ****/
+/**** Hero Section starts ****/
+/**** Hero Section starts ****/
+
+section{
+  padding: 0 150px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+section .first-section, .second-section{
+  width: 50%;
+  flex-basis: 50%;
+}
+
+section .first-section h1{
+  font-size: 3.5rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+section .first-section p{
+  padding-bottom: 40px;
+  color: var(--medium-gray);
+  line-height: 25px;
+  font-size: .8rem;
+}
+
+section .first-section .btn-container{
+  margin-bottom: 30px;
+}
+
+section .first-section .btn-container button{
+  background: black;
+  color: white;
+}
+
+.second-section{
+  height: 70vh;
+}
+
+.second-section img{
+  width: 90%;
+  height: 100%;
+}
+
+.image-mobile{
+  display: none;
+}
+
+.icon-section{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+
+.icon-section img{
+  width: 4.6rem;
+}
+
+/**** Hero Section ends ****/
+/**** Hero Section ends ****/
+/**** Hero Section ends ****/
+/**** Hero Section ends ****/

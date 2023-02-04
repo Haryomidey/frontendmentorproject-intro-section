@@ -1,0 +1,200 @@
+@media screen and (max-width: 1000px){
+    section{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    section .first-section, .second-section{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    section .first-section{
+        text-align: center;
+    }
+
+    .icon-section{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-open-close{
+        display: block;
+        z-index: 11;
+        position: fixed;
+        right: 20px;
+    }
+    
+    .menu-open-close .menu-open{
+        display: block;
+    }
+    .menu-open-close .menu-open.active{
+        display: none;
+    }
+
+    .menu-open-close .menu-close{
+        display: none;
+    }
+
+    .menu-open-close .menu-close.active{
+        display: block;
+    }
+
+    header{
+        position: fixed;
+        background: var(--almost-white);
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .nav-wrapper{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.505);
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: -100%;
+        transition: margin 0.5s;
+    }
+
+     .nav-wrapper.active{
+        margin-left: 0;
+    }
+
+    .nav{
+        position: fixed;
+        width: 70%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        padding-top: 70px;
+        z-index: 11;
+        align-items: flex-start;
+        padding-left: 20px;
+        justify-content: initial;
+        margin-right: -100%;
+        transition: margin 0.5s;
+    }
+    .nav.active{
+        margin-right: 0;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .feature, .company{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .feature-hover, .company-hover{
+        box-shadow: none;
+        position: inherit;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+    }
+
+    .registration{
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .registration button{
+        color: rgba(97, 96, 96, 0.757);
+    }
+
+    .registration .register-btn{
+        width: 100%;
+        max-width: 200px;
+        border-color: rgba(97, 96, 96, 0.757);;
+    }
+
+    /*** Hero Section ***/
+    /*** Hero Section ***/
+    /*** Hero Section ***/
+    /*** Hero Section ***/
+
+
+    section{
+        padding: 0 100px;
+        gap: 30px;
+        margin-top: 80px;
+    }
+
+    .second-section img{
+        width: 100%;
+    }
+
+
+    .image-mobile{
+        display: block;
+    }
+
+    .image-desktop{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 650px){
+      section{
+        padding: 0 100px;
+    }
+
+    section .first-section h1{
+        font-size: 2rem;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 580px){
+      section{
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    section .first-section h1{
+        font-size: 2rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    section .first-section p{
+        padding-bottom: 20px;
+        color: var(--medium-gray);
+        line-height: 25px;
+        font-size: .7rem;
+    }
+
+    .icon-section img{
+        width: 3rem;
+    }
+
+    .second-section{
+        max-height: 50vh;
+    }
+
+    .second-section img{
+        height: 90%;
+    }
+
+    section .first-section .btn-container{
+        margin-bottom: 30px;
+    }
+
+}
